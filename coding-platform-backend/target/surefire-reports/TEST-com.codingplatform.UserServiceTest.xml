@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.codingplatform.UserServiceTest" time="0.982" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="maven.user.extensions" value="C:\Users\HARIHARAN/.m2/extensions.xml"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\MyCode\coding-platform\coding-platform\coding-platform-backend\target\test-classes;D:\MyCode\coding-platform\coding-platform\coding-platform-backend\target\classes;C:\Users\HARIHARAN\.m2\repository\jakarta\servlet\jakarta.servlet-api\6.0.0\jakarta.servlet-api-6.0.0.jar;C:\Users\HARIHARAN\.m2\repository\org\postgresql\postgresql\42.7.4\postgresql-42.7.4.jar;C:\Users\HARIHARAN\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\HARIHARAN\.m2\repository\io\jsonwebtoken\jjwt\0.9.1\jjwt-0.9.1.jar;C:\Users\HARIHARAN\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\HARIHARAN\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\HARIHARAN\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.1\jaxb-impl-2.3.1.jar;C:\Users\HARIHARAN\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\HARIHARAN\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\HARIHARAN\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\HARIHARAN\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.3.1\httpclient5-5.3.1.jar;C:\Users\HARIHARAN\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2.4\httpcore5-5.2.4.jar;C:\Users\HARIHARAN\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2.4\httpcore5-h2-5.2.4.jar;C:\Users\HARIHARAN\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\HARIHARAN\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\HARIHARAN\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="maven.user.toolchains" value="C:\Users\HARIHARAN/.m2/toolchains.xml"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="maven.repo.central" value="https://repo.maven.apache.org/maven2"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="session.topDirectory" value="D:\MyCode\coding-platform\coding-platform\coding-platform-backend"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\HARIHARAN\AppData\Local\Temp\surefire1117571131287559242\surefirebooter-20250423182949677_3.jar C:\Users\HARIHARAN\AppData\Local\Temp\surefire1117571131287559242 2025-04-23T18-29-49_466-jvmRun1 surefire-20250423182949677_1tmp surefire_0-20250423182949677_2tmp"/>
+    <property name="maven.project.settings" value="${session.rootDirectory}/.mvn/settings.xml"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\MyCode\coding-platform\coding-platform\coding-platform-backend\target\test-classes;D:\MyCode\coding-platform\coding-platform\coding-platform-backend\target\classes;C:\Users\HARIHARAN\.m2\repository\jakarta\servlet\jakarta.servlet-api\6.0.0\jakarta.servlet-api-6.0.0.jar;C:\Users\HARIHARAN\.m2\repository\org\postgresql\postgresql\42.7.4\postgresql-42.7.4.jar;C:\Users\HARIHARAN\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\HARIHARAN\.m2\repository\io\jsonwebtoken\jjwt\0.9.1\jjwt-0.9.1.jar;C:\Users\HARIHARAN\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\HARIHARAN\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\HARIHARAN\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.1\jaxb-impl-2.3.1.jar;C:\Users\HARIHARAN\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\HARIHARAN\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\HARIHARAN\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\HARIHARAN\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.3.1\httpclient5-5.3.1.jar;C:\Users\HARIHARAN\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2.4\httpcore5-5.2.4.jar;C:\Users\HARIHARAN\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2.4\httpcore5-h2-5.2.4.jar;C:\Users\HARIHARAN\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\HARIHARAN\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\HARIHARAN\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\HARIHARAN"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="maven.user.conf" value="C:\Users\HARIHARAN/.m2"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\MyCode\coding-platform\coding-platform\coding-platform-backend"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="maven.project.conf" value="${session.rootDirectory}/.mvn"/>
+    <property name="surefire.real.class.path" value="C:\Users\HARIHARAN\AppData\Local\Temp\surefire1117571131287559242\surefirebooter-20250423182949677_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
+    <property name="user.name" value="HARIHARAN"/>
+    <property name="maven.installation.conf" value="C:\Program Files\Apache\maven/conf"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="maven.installation.toolchains" value="C:\Program Files\Apache\maven/conf/toolchains.xml"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="maven.project.extensions" value="${session.rootDirectory}/.mvn/extensions.xml"/>
+    <property name="localRepository" value="C:\Users\HARIHARAN\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\HARIHA~1\AppData\Local\Temp\"/>
+    <property name="maven.installation.extensions" value="C:\Program Files\Apache\maven/conf/extensions.xml"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="D:\MyCode\coding-platform\coding-platform\coding-platform-backend"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\MINICONDA\condabin;D:\MINICONDA\bin;D:\MINICONDA\Scripts;D:\MINICONDA\condabin;C:\Users\HARIHARAN\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\HARIHARAN\bin;D:\MINICONDA\Scripts;D:\MINICONDA;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files\HP\OMEN-Broadcast\Common;C:\Program Files\Git\cmd;C:\Program Files\Neovim\bin;C:\Users\HARIHARAN\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Go\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Users\HARIHARAN\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\HARIHARAN\AppData\Local\Programs\Python\Python311;C:\Users\HARIHARAN\AppData\Local\Programs\Python\Python312\Scripts;C:\Users\HARIHARAN\AppData\Local\Programs\Python\Python312;C:\Users\HARIHARAN\AppData\Local\Programs\Pytho;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\dotnet;C:\Program Files\Apache\maven\bin;C:\Users\HARIHARAN\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\HARIHARAN\AppData\Local\Programs\Python\Python311;C:\Users\HARIHARAN\AppData\Local\Programs\Python\Python312\Scripts;C:\Users\HARIHARAN\AppData\Local\Programs\Python\Python312;C:\Users\HARIHARAN\AppData\Local\Programs\Python\Python313\Scripts;C:\Users\HARIHARAN\AppData\Local\Programs\Python\Python313;C:\MinGW\bin;C:\Users\HARIHARAN\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\HARIHARAN\Documents\MyCode\project2\ffmpeg-7.0.1-full_build\ffmpeg-7.0.1-full_build\bin;C:\Users\HARIHARAN\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\HARIHARAN\go\bin;C:\Users\HARIHARAN\Documents\MyCode\vcpkg\vcpkg;C:\Users\HARIHARAN\AppData\Local\Microsoft\WindowsApps;C:\Users\HARIHARAN\.dotnet\tools;C:\Program Files\Apache\maven;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
+    <property name="maven.installation.settings" value="C:\Program Files\Apache\maven/conf/settings.xml"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="maven.user.settings" value="C:\Users\HARIHARAN/.m2/settings.xml"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testRegisterAndLogin" classname="com.codingplatform.UserServiceTest" time="0.909"/>
+</testsuite>
