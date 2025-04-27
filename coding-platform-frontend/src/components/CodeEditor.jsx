@@ -1,21 +1,26 @@
 import { useState } from "react";
 import AceEditor from "react-ace";
 import axios from "axios";
-
+import { useEffect, useRef } from 'react';
 import "ace-builds/src-noconflict/mode-java";
 import "ace-builds/src-noconflict/mode-python";
 import "ace-builds/src-noconflict/theme-monokai";
 import { useNavigate } from "react-router-dom";
+import { FaUser } from 'react-icons/fa6';
 
 function CodeEditor() {
   const [code, setCode] = useState("");
   const [language, setLanguage] = useState("java");
+  const username = localStorage.getItem("username")
+  const [isLoading, setIsLoading] = useState(false)
   const [stdin, setStdin] = useState("");
   const [output, setOutput] = useState(null);
   const navigate = useNavigate();
 
+  const bottomRef = useRef(null);
   const handleSubmit = async () => {
     try {
+      setIsLoading(true)
       const token = localStorage.getItem("token");
       const processedStdin = stdin.replace(/\\n/g, "\n");
       const response = await axios.post(
@@ -34,8 +39,14 @@ function CodeEditor() {
     } catch (err) {
       console.error("Submission error:", err);
       alert("Submission failed: " + err.message);
+    }finally{
+      setIsLoading(false)
     }
   };
+
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [output]);
 
   const handleLogout = async () => {
     localStorage.removeItem("token");
@@ -44,14 +55,16 @@ function CodeEditor() {
 
   return (
     <div className="min-h-screen bg-gray-100 p-4">
-      <button
+    <div className="flex ml-auto bg-slate-300 items-center gap-8 w-fit rounded-md justify-center ">
+    <span className="gap-4 items-center flex justify-center px-4 py-2 "><FaUser/>{username}</span>
+    <button
         className="bg-red-500 text-white px-4 py-2 rounded-md cursor-pointer"
         onClick={handleLogout}
       >
         Logout
-      </button>
+      </button></div>
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-2xl font-bold mb-4">Code Editor</h2>
+        <h2 className="text-2xl font-bold mb-4 flex gap-4 items-center justify-center"><img className="size-8" src="./cappuccino.png"/>Cappuccino</h2>
         <select
           value={language}
           onChange={(e) => setLanguage(e.target.value)}
@@ -71,7 +84,7 @@ function CodeEditor() {
             enableBasicAutocompletion: true,
             enableLiveAutocomplete: true,
             enableSnippets: true,
-            fontSize: 14,
+            fontSize: 28,
             showPrintMargin: false,
           }}
         />
@@ -90,9 +103,10 @@ function CodeEditor() {
         </div>
         <button
           onClick={handleSubmit}
-          className="mt-4 bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
+          disabled={isLoading}
+          className="mt-4 disabled:bg-slate-300 bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
         >
-          Submit Code
+          {isLoading ? "Submitting..." : "Submit Code"}
         </button>
         {output?.compile_output && (
           <p className="mt-4 border-2 border-slate-500 font-mono flex text-red-500 bg-slate-100">
@@ -113,6 +127,7 @@ function CodeEditor() {
           </p>
         )}
       </div>
+      <div ref={bottomRef} />
     </div>
   );
 }

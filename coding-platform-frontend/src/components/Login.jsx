@@ -19,6 +19,7 @@ function Login() {
         }
       );
       localStorage.setItem("token", response.data.token);
+      localStorage.setItem("username", username);
       navigate("/editor");
     } catch (err) {
       setError("Invalid credentials");
